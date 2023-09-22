@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Table</title>
+</head>
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 80%; /* Set the width of the table */
+            margin: 20px auto; /* Center the table horizontally */
+            border-collapse: collapse; /* Collapse table borders */
+            border: 2px solid #000; /* Add a border to the table */
+        }
+
+        th, td {
+            border: 1px solid #000; /* Add borders to table cells */
+            padding: 10px; /* Add some padding to table cells */
+            text-align: center; /* Center-align text in cells */
+        }
+
+        th {
+            background-color: #f0f0f0; /* Background color for table headers */
+        }
+        
+        /* Initially hide the textbox */
+        #textbox {
+            display: none;
+        }
+    
+    </style>
+
+
+
+
+
+
+
+
+    <h1>User Table  border</h1>
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>Allocated Subsidized Water Units</th>
+        </tr>
+        <tr>
+            <td>A-110</td>
+            <td> 100<!-- Generate and display a random number for User 1 here --></td>
+        </tr>
+        <tr>
+            <td>B-101</td>
+            <td> 20<!-- Generate and display a random number for User 2 here --></td>
+        </tr>
+        <tr>
+            <td>C-101</td>
+            <td>80<!-- Generate and display a random number for User 3 here --></td>
+        </tr>
+        <tr>
+            <td>D-101</td>
+            <td>60<!-- Generate and display a random number for User 4 here --></td>
+        </tr>
+    </table>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Submit and Change Buttons</title>
+</head>
+<body>
+    
+
+
+        <button type="submit">Submit</button>
+        
+
+        <!-- Button to toggle the textbox -->
+        <button id="Button">Change</button>
+    
+        <!-- Textbox that is initially hidden -->
+        <input type="text" id="textbox" placeholder="Enter something">
+    
+        <script>
+            // JavaScript code to toggle the visibility of the textbox
+            const toggleButton = document.getElementById("Button");
+            const textbox = document.getElementById("textbox");
+    
+            toggleButton.addEventListener("click", function () {
+                // Toggle the visibility of the textbox
+                if (textbox.style.display === "none") {
+                    textbox.style.display = "block";
+                } else {
+                    textbox.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+    </html>
